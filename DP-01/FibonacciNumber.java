@@ -30,5 +30,37 @@ public class FibonacciNumber {
 
         System.out.println(curr);
 
+        // S.C => O(N)
+        System.out.println(fibonacci(A));
+
+    }
+
+    // same problem using extra space S.C => O(N)
+    static int solve(int n, int[] dp) {
+
+        if (n == 0) {
+            return 0;
+        }
+
+        if (n == 1) {
+            return 1;
+        }
+
+        if (dp[n] != -1) {
+            return dp[n];
+        }
+
+        dp[n] = solve(n - 1, dp) + solve(n - 2, dp);
+
+        return dp[n];
+    }
+
+    // Main solution function
+    static int fibonacci(int n) {
+
+        int[] dp = new int[n + 1];
+        Arrays.fill(dp, -1);
+
+        return solve(n, dp);
     }
 }
