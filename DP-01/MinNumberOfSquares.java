@@ -1,6 +1,7 @@
 
 public class MinNumberOfSquares {
 
+    // Minimum number of perfect square of a number needed to match the given integer
     public int countMinSquares(int A) {
         int[] dp = new int[A + 1];
 
