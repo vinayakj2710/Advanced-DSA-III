@@ -5,7 +5,7 @@ import java.util.*;
 public class FibonacciNumber {
 
     public static void main(String[] args) {
-        // solving using no extra space
+        // solution using no extra space
         Scanner sc = new Scanner(System.in);
         int A = sc.nextInt();
 
