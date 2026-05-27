@@ -3,7 +3,7 @@ import java.util.*;
 
 class HeapSort {
 
-    // Build Min-Heap using Array
+    // Building Min-Heap using Array
     private int[] heapSort(int[] A) {
         int N = A.length;
         // max heapify
@@ -25,7 +25,7 @@ class HeapSort {
         A[j] = temp;
     }
 
-    // Build Max-Heap using Array
+    // Building Max-Heap using Array
     private void maxHeapify(int[] A, int n, int i) {
         int largest = i;
         int left = 2 * i + 1;
