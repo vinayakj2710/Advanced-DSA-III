@@ -1,6 +1,6 @@
 
-      
-public int MinCandies(ArrayList<Integer> A) {
+
+      public int MinCandies(ArrayList<Integer> A) {
         int n = A.size();
         int[] candies = new int[n];
         Arrays.fill(candies, 1);
@@ -12,7 +12,7 @@ public int MinCandies(ArrayList<Integer> A) {
             }
         }
 
-        // Right to left
+        // Right to left traversal
         int total = candies[n - 1];
         for (int i = n - 2; i >= 0; i--) {
             if (A.get(i) > A.get(i + 1)) {
