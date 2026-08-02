@@ -1,4 +1,6 @@
 
+import java.util.*;
+
 public class RunningSum {
 
     public int[] solve(int[] A) {
